@@ -156,6 +156,10 @@ export class HaTextField extends TextFieldBase {
       .mdc-text-field__input[type="number"] {
         direction: var(--direction);
       }
+      .mdc-text-field__affix--prefix {
+        padding-left: 0;
+        padding-right: var(--text-field-prefix-padding-right, 2px);
+      }
     `,
     // safari workaround - must be explicit
     document.dir === "rtl"
