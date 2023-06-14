@@ -201,7 +201,7 @@ class MoreInfoCover extends LitElement {
                       .label=${this.hass.localize(
                         `ui.dialogs.more_info_control.cover.switch_mode.position`
                       )}
-                      ?selected=${this._mode === "position"}
+                      .selected=${this._mode === "position"}
                       .path=${mdiMenu}
                       .mode=${"position"}
                       @click=${this._setMode}
@@ -210,7 +210,7 @@ class MoreInfoCover extends LitElement {
                       .label=${this.hass.localize(
                         `ui.dialogs.more_info_control.cover.switch_mode.button`
                       )}
-                      ?selected=${this._mode === "button"}
+                      .selected=${this._mode === "button"}
                       .path=${mdiSwapVertical}
                       .mode=${"button"}
                       @click=${this._setMode}
