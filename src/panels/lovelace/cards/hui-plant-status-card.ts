@@ -3,6 +3,7 @@ import {
   mdiThermometer,
   mdiWaterPercent,
   mdiWhiteBalanceSunny,
+  mdiMoleculeCo2,
 } from "@mdi/js";
 import { HassEntity } from "home-assistant-js-websocket";
 import {
@@ -34,6 +35,7 @@ const SENSOR_ICONS = {
   brightness: mdiWhiteBalanceSunny,
   conductivity: mdiSprout,
   battery: undefined,
+  co2: mdiMoleculeCo2,
 };
 
 @customElement("hui-plant-status-card")
